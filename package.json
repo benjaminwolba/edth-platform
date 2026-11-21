@@ -1,0 +1,13 @@
+{
+  "name": "edth-platform",
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "db:start": "supabase start",
+    "db:reset": "supabase db reset",
+    "db:test": "supabase test db",
+    "db:types": "supabase gen types typescript --local > packages/db/src/types.ts"
+  }
+}
